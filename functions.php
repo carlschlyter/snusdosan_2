@@ -26,6 +26,17 @@ add_action('wp_enqueue_scripts', 'load_js');
 
 //Theme options
 add_theme_support('menus');
+add_theme_support('post-thumbnails');
+add_theme_support('widgets');
+add_theme_support('custom-background');
+
+//Custom Background
+
+// $args = array(
+//     'default-color' => '0000ff',
+//     'default-image' => get_template_directory_uri() . '/images/StockSnap_QCCEZ16Q6Y.jpg',
+// );
+// add_theme_support( 'custom-background', $args );
 
 //Menus
 register_nav_menus(
@@ -36,3 +47,8 @@ register_nav_menus(
     )
 
 );
+
+//Custom image sizes
+add_image_size('hero-image', 2400, 1600, false);
+add_image_size('hero-image-shallow', 1920, 800, true);
+add_image_size('icons', 50, 50, true);
