@@ -14,6 +14,7 @@
                 <img src="<?php echo $icon['icon']['sizes']['icons']; ?>" alt="">
                 <p><?php echo $icon['label']; ?></p>
             </div>
+            
         <?php endforeach; ?>
 
     <?php endif; ?>

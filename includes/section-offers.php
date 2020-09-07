@@ -6,16 +6,34 @@
         
         $offers = get_sub_field('offer_plates');
         $header = get_sub_field('header');
+        $image = ($offers[2]['image']);
+        $picture = $image['sizes']['offer-plates'];
 
     ?>
+
         <div class="col-md-12" id="offer-header">
             <h3><?php echo $header; ?></h3>
         </div>
-        <?php foreach( $offers as $offer ) : ?>
-        <div class="col-md-12">
-            plats för bild
+
+        <div class="col-md-12" id="offer-plate-box">
+
+            <?php foreach( $offers as $offer ) : 
+                
+                $picture = $offer['image']['sizes']['offer-plates'];
+                $info = $offer['info'];
+                $link = $offer['link'];
+
+            ?>
+              <div>
+                  <img src="<?php echo $picture; ?>" alt="">
+                  <p><?php echo $info; ?></p>  
+                  <a href="<?php $link; ?>">Köp</a>
+            </div>  
+
+
+            <?php endforeach; ?>
+
         </div>
-        <?php endforeach; ?>
 
     <?php endif; ?>
 

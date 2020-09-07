@@ -52,3 +52,4 @@ register_nav_menus(
 add_image_size('hero-image', 2400, 1600, false);
 add_image_size('hero-image-shallow', 1920, 800, true);
 add_image_size('icons', 50, 50, true);
+add_image_size('offer-plates', 200, 200, true);
