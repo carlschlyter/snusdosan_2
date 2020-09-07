@@ -2,40 +2,56 @@
 
 <div class="container-fluid px-0">
 
-        <div class="row no-gutters">
+    <div class="row no-gutters">
 
-            <div class="col-md-12"">
+        <div class="col-md-12"">
 
-                <?php get_template_part('includes/section','hero'); ?>
+            <?php get_template_part('includes/section','hero'); ?>
 
-            </div>
+        </div>
 
-            <div class="col-md-12" id="logo">
+    </div>
 
-                <?php get_template_part('includes/section','logo'); ?>
-            
-            </div>
+    <div class="row no-gutters">
 
-            <div class="col-md-12" id="hero-text">
+        <div class="col-md-12" id="logo">
 
-                <?php get_template_part('includes/section','herotext'); ?>
-
-            </div>
-
-            <div class="col-md-12" id="icons">
-
-                <?php get_template_part('includes/section','icons'); ?>
-
-            </div>
-
-            <div class="col-md-12" id="offers">
-
-                <?php get_template_part('includes/section','offers'); ?>
-
-            </div>
+            <?php get_template_part('includes/section','logo'); ?>
         
         </div>
 
+    </div>
+
+    <div class="row no-gutters">
+
+        <div class="col-md-12" id="hero-text">
+
+            <?php get_template_part('includes/section','herotext'); ?>
+
+        </div>
+
+    </div>
+
+    <div class="row no-gutters">
+
+        <div class="col-md-12" id="icons">
+
+            <?php get_template_part('includes/section','icons'); ?>
+
+        </div>
+
+    </div>
+
+    <div class="row no-gutters">
+
+        <div class="col-md-12" id="offers">
+
+            <?php get_template_part('includes/section','offers'); ?>
+
+        </div>
+
+    </div>
+    
 </div>
 
 <?php get_footer();?>

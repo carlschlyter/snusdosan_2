@@ -15,18 +15,29 @@
 </head>
 <body>
 
-<header>
+    <header>
 
-<div class="container">
-    <?php
-        wp_nav_menu(        
-                array(
-                'theme_location' => 'top-menu',
-                'menu_class' => 'top-bar'
-                )    
-        );
-    ?>
-</div>
+        <div class="container">
 
-</header>
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <?php
+                        wp_nav_menu(        
+                                array(
+                                'theme_location' => 'top-menu',
+                                'menu_class' => 'top-bar'
+                                )    
+                        );
+
+                    ?>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
     

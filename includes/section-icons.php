@@ -10,7 +10,7 @@
 
         <?php foreach( $icons as $icon ) : ?>
 
-            <div class="col-md-4" id="icon-box">
+            <div id="icon-box">
                 <img src="<?php echo $icon['icon']['sizes']['icons']; ?>" alt="">
                 <p><?php echo $icon['label']; ?></p>
             </div>

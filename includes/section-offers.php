@@ -11,11 +11,11 @@
 
     ?>
 
-        <div class="col-md-12" id="offer-header">
+        <div id="offer-header">
             <h3><?php echo $header; ?></h3>
         </div>
 
-        <div class="col-md-12" id="offer-plate-box">
+        <div id="offer-plate-box">
 
             <?php foreach( $offers as $offer ) : 
                 
@@ -24,11 +24,12 @@
                 $link = $offer['link'];
 
             ?>
-              <div>
+
+                <div>
                   <img src="<?php echo $picture; ?>" alt="">
                   <p><?php echo $info; ?></p>  
                   <a href="<?php $link; ?>">Köp</a>
-            </div>  
+                </div>  
 
 
             <?php endforeach; ?>
