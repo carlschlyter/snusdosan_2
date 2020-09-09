@@ -28,7 +28,7 @@
                 <div>
                   <img src="<?php echo $picture; ?>" alt="">
                   <p><?php echo $info; ?></p>  
-                  <a href="<?php $link; ?>">Köp</a>
+                  <a href="<?php echo $link; ?>">Köp</a>
                 </div>  
 
 

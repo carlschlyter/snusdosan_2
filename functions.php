@@ -43,7 +43,8 @@ register_nav_menus(
 
     array(
 
-        'top-menu' => 'Top Menu Location'
+        'top-menu' => 'Top Menu Location',
+        'footer-menu' => 'Footer Location'
     )
 
 );

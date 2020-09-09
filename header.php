@@ -17,21 +17,29 @@
 
     <header>
 
-        <div class="container">
+        <div class="container menu-container">
 
-            <div class="row">
+            <div class="menu-wrap">
 
-                <div class="col-md-12">
+                <input type="checkbox" class="toggler">
 
-                    <?php
-                        wp_nav_menu(        
-                                array(
-                                'theme_location' => 'top-menu',
-                                'menu_class' => 'top-bar'
-                                )    
-                        );
+                <div class="hamburger"><div></div></div>
 
-                    ?>
+                <div class="menu">
+
+                    <div>
+
+                        <?php
+                            wp_nav_menu(        
+                                    array(
+                                    'theme_location' => 'top-menu',
+                                    'menu_class' => 'top-bar'
+                                    )    
+                            );
+
+                        ?>
+
+                    </div>
 
                 </div>
 

@@ -10,7 +10,7 @@
 
     ?>
 
-    logga
+    [logga]
         <!-- <img src="<?php echo $picture ?>"  alt="">    -->
 
     <?php endif; ?>

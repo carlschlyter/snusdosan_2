@@ -51,7 +51,15 @@
         </div>
 
     </div>
-    
+
+    <div class="row no-gutters">
+
+        <div class="col-md-12" id="empty-space">
+
+        </div>
+
+    </div>
+
 </div>
 
 <?php get_footer();?>
