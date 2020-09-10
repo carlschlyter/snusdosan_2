@@ -54,7 +54,7 @@
 
     <div class="row no-gutters">
 
-        <div class="col-md-12" id="empty-space">
+        <div class="col-md-12 empty-space">
 
         </div>
 
