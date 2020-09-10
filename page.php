@@ -5,9 +5,17 @@
 
     <div class="container">
 
-        <h1><?php the_title(); ?></h1>
+        <div class="row">
 
-        <?php get_template_part('includes/section','content'); ?>
+            <div class="col-md-12">
+
+                <h1><?php the_title(); ?></h1>
+
+                <?php get_template_part('includes/section','content'); ?>
+
+            </div>
+
+        </div>
         
     </div>
 
