@@ -5,7 +5,7 @@
     <?php if( get_row_layout() == 'hero_image'): 
     
     $image = get_sub_field('image');
-    $picture = $image['sizes']['hero-image-shallow'];
+    $picture = $image['sizes']['hero-image-shallow-plus'];
 
     ?>
         <img src="<?php echo $picture ?>" class="full-screen" alt="">   

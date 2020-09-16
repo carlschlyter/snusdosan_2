@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
+    /* font-size: 2rem; */
 }
 
 .menu-container {
@@ -407,6 +407,41 @@ body {
     color: #111;
 }
 
+#contact h2 {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.about-txt {
+    margin-top: 3%;
+    margin-bottom: 3%; 
+}
+
+.about-txt h1, h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.about-txt h1 {
+    margin-bottom: 20px;
+}
+
+.about-txt h3 {
+    font-style: italic;
+}
+
+.about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-cont {
+    margin-bottom: 3%;
+    padding: 2%;
+    /* border: 1px solid grey; */
+}
 
 footer {
     background: lightseagreen;
@@ -448,5 +483,20 @@ footer .footer-bar li a {
 footer .footer-bar li a:hover {
     background-color: darkslategrey;
  }
+
+ /*Woocommerce*/
+
+ .woocommerce .products {
+     display: flex;
+    justify-content: space-evenly;
+ }
+
+ .woocommerce-input-wrapper {
+     width: 100%;
+     display: block;
+ }
+
+
+
 
 

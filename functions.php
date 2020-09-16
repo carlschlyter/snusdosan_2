@@ -52,5 +52,69 @@ register_nav_menus(
 //Custom image sizes
 add_image_size('hero-image', 2400, 1600, false);
 add_image_size('hero-image-shallow', 1920, 800, true);
+add_image_size('hero-image-shallow-plus', 1920, 1000, true);
 add_image_size('icons', 50, 50, true);
 add_image_size('offer-plates', 200, 200, true);
+
+
+//Woocommerce
+function mytheme_add_woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
+
+//Contact Form
+
+add_action('wp_ajax_contact', 'contact_form');
+add_action('wp_ajax_nopriv_contact', 'contact_form');
+
+function contact_form(){
+
+
+    $formdata = [];
+
+    wp_parse_str($_POST['contact'], $formdata);
+
+    //Sender of form email i.e. admin
+    $admin_email = get_option('admin_email');
+
+    //Email headers
+    $headers[] = 'Content-type: text/html; charset=UTF-8';
+    $headers[] = 'Från: ' . $admin_email;
+    $headers[] = 'Svar till: ' . $formdata['email'];
+
+    //Recipient of email
+    $send_to = $admin_email;
+
+    //Subject
+    $subject = "Fråga från " . $formdata['Förnamn'] . ' ' . $formdata['Efternamn'];
+
+    //Message
+    $message = '';
+
+    foreach($formdata as $index => $field) {
+
+        $message .= '<strong>' . $index . '</strong>: ' . $field . '<br />';
+    }
+
+    try {
+
+        if(wp_mail($send_to, $subject, $message, $headers)){
+
+            wp_send_json_success('E-post skickat');
+
+        } else {
+
+            wp_send_json_error('Fel när epost skickades');
+        }
+    } catch (exception $e) {
+
+            wp_send_json_error($e->getMessage());
+    
+    }
+
+    wp_send_json_success( $formdata['Förnamn'] );
+
+}

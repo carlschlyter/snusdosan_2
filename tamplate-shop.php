@@ -1,9 +1,14 @@
+<?php
+/*
+Template name: Shop Page
+*/
+?>
 
 <?php get_header();?>
 
     <div class="container">
 
-        <div class="row no-gutters">
+        <div class="row">
 
             <div class="col-md-12 empty-space">
 
@@ -26,4 +31,3 @@
     </div>
 
 <?php get_footer();?>
-
