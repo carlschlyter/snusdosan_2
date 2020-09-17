@@ -240,6 +240,11 @@ body {
     text-align: center; 
 }
 
+#hero-text:hover {
+    box-shadow: 5px 5px 8px 3px black;
+    top: 148px;
+    left: 102px;
+}
 
 #hero-text-button {
     width: fit-content;
