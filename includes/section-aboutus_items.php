@@ -37,12 +37,12 @@
 
             <div class="row about-cont">
 
-                <div class="col-lg-6 boxes-txt">
+                <div class="col-lg-6 about-txt">
                     <h2><?php echo $item['title']; ?> </h2>
                     <p><?php echo $item['text'] ?></p>
                 </div>
         
-                <div class="col-lg-6 boxes-img">
+                <div class="col-lg-6 about-img">
                     <img src="<?php echo $image; ?>" alt="" class="img-fluid">
                 </div>
 

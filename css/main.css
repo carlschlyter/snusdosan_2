@@ -373,6 +373,12 @@ body {
     margin-bottom: 3%; 
 }
 
+.boxes-txt div, .boxes-txt div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .boxes-txt h1, h2 {
     display: flex;
     justify-content: center;
@@ -393,6 +399,13 @@ body {
     margin-bottom: 3%;
     padding: 2%;
     border: 1px solid grey;
+    position: relative;
+}
+
+.boxes-cont:hover {
+    box-shadow: 5px 5px 8px 3px lightslategrey;
+    top: -3px;
+    left: 2px; 
 }
 
 .boxes-txt-btn {
@@ -405,11 +418,45 @@ body {
     margin-bottom:0.3rem; 
     text-decoration: none;
     color: #111;
+    position: relative;
+    border-radius: 7%;
+}
+
+.boxes-txt-btn:hover {
+    background-color: black;
+    color: white;
+    top: -3px;
+    left: 2px; 
+    text-decoration: none;
+}
+
+#form-page-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#form-cont {
+    width: 75%;
+}
+
+#contact {
+    border: 1px solid grey;
+    padding: 2%;
+    position: relative;
 }
 
 #contact h2 {
     margin-bottom: 40px;
     padding-bottom: 20px;
+}
+
+#contact:hover {
+    box-shadow: 5px 5px 8px 3px lightslategrey;
+    top: -3px;
+    left: 2px; 
 }
 
 .about-txt {
@@ -441,7 +488,16 @@ body {
     margin-bottom: 3%;
     padding: 2%;
     /* border: 1px solid grey; */
+    position: relative;
 }
+
+.about-cont:hover {
+    box-shadow: 5px 5px 8px 3px lightslategrey;
+    top: -3px;
+    left: 2px; 
+
+}
+
 
 footer {
     background: lightseagreen;
@@ -495,6 +551,18 @@ footer .footer-bar li a:hover {
      width: 100%;
      display: block;
  }
+
+.price bdi, span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shoppen ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 
 

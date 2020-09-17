@@ -12,7 +12,7 @@
         
         <div class="row">
 
-            <div class="col-12">
+            <div class="col-12" id="shoppen">
 
                 <?php woocommerce_content(); ?> 
 

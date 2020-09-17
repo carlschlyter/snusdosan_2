@@ -6,17 +6,13 @@ Template name: Contact
 
 <?php get_header(); ?>
 
-    <div class="container">
+    <div class="container" id="form-page-wrap">
 
-        <div class="row">
-
-            <div class="col-md-12 empty-space">
-
-            </div>
+        <div id="form-cont">
+        
+            <?php get_template_part('includes/form','contact'); ?>
 
         </div>
-        
-        <?php get_template_part('includes/form','contact'); ?>
 
     <div class="push"></div>
     

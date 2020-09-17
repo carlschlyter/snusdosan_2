@@ -1,3 +1,5 @@
+<div id="success-msg" class="alert alert-success" style="display:none"></div>
+
 <form id="contact">
 
     <h2>Skicka en fråga till oss! </h2>
@@ -34,7 +36,7 @@
  
     <div class="form-group">
         
-            <textarea name="kontakt" class="form-control" placeholder="Din fråga" required></textarea>
+            <textarea name="Meddelande" class="form-control" placeholder="Din fråga" required></textarea>
     
     </div>
 
@@ -73,7 +75,13 @@
 
             success: function(res){
 
-                alert(res.data);
+                $('#contact').fadeOut(200);
+
+                $('#success-msg').text('Tack för Ditt meddelande!').show();
+
+                $('#contact').trigger('reset');
+
+                $('#contact').fadeIn(2000);
 
             }, 
 
